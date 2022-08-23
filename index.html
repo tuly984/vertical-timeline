@@ -6,12 +6,14 @@
     <title>Responsive Timeline Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href='//fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
+   
 </head>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Poppins&family=Roboto:wght@400;500&display=swap');
   body{
   line-height:1.3em;
   min-width:920px;
+  text-align: center;
 }
 .history-tl-container{
     font-family: "Roboto",sans-serif;
@@ -55,6 +57,7 @@
     transition: all 1000ms ease-in-out;
 }
 ul.tl li .item-title{
+  width: 300px; 
 }
 ul.tl li .item-detail{
     color:rgba(0,0,0,0.5);
@@ -68,8 +71,66 @@ ul.tl li .timestamp{
     text-align: right;
     font-size: 12px;
 }
+
+
+.container h1{
+text-align: center;
+color: purple;
+}
+
+.container-2{
+  border: 2px solid #f5ae70;
+  height: 80px;
+  margin-right: 35%;
+  margin-left: 35%;  
+  padding: 5px;
+
+}
+.container-2 p{
+  text-align: left;
+  margin-top: 5%;
+  color: black;
+}
+.container-2 .p1{
+  text-align: right;
+  margin-top: 1%;
+  color: #8D8D8D;
+}
+
+.container-3{
+  margin-top: -3%;
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
 </style>
 <body>
+  
+  <div class="container">
+    <h1>Tracking Status</h1>
+
+  </div>
+  <div class="container-2">
+    
+    <div class="left"><p class="text">Trcking ID: AML362220822188</p>
+      <p>Delivery Address: xyz</p> </div>
+
+    <div class="right"><p>Order created time: 2022-08-22 11:59:33</p>
+      <p>Merchant Address: dhaka</p> </div>
+    
+    
+
+
+    
+  </div>
+
+  
+
   <div class="history-tl-container">
     <ul class="tl">
       <li class="tl-item" ng-repeat="item in retailer_history">
@@ -90,9 +151,80 @@ ul.tl li .timestamp{
         <div class="timestamp">
           1st June 2015<br> 7:00 PM
         </div>
-        <div class="item-title">Throw that goddamn ring in the lava</div>
+        <div class="item-title">Payment ghfjtgiutu;hgjmyhioy6uygt7986tfiut0dn  </div>
         <div class="item-detail">Also, throw that Gollum too</div>
       </li>
+      <li class="tl-item" ng-repeat="item in retailer_history">
+        <div class="timestamp">
+          1st June 2015<br> 7:00 PM
+        </div>
+        <div class="item-title">Return To Marchant</div>
+        <div class="item-detail">Also, throw that Gollum too</div>
+      </li>
+      <li class="tl-item" ng-repeat="item in retailer_history">
+        <div class="timestamp">
+          1st June 2015<br> 7:00 PM
+        </div>
+        <div class="item-title">Return To Head office</div>
+        <div class="item-detail">Also, throw that Gollum too</div>
+      </li>
+      <li class="tl-item" ng-repeat="item in retailer_history">
+        <div class="timestamp">
+          1st June 2015<br> 7:00 PM
+        </div>
+        <div class="item-title">Order Delivery</div>
+        <div class="item-detail">Also, throw that Gollum too</div>
+      </li>
+      <li class="tl-item" ng-repeat="item in retailer_history">
+        <div class="timestamp">
+          1st June 2015<br> 7:00 PM
+        </div>
+        <div class="item-title">Delivery Pending</div>
+        <div class="item-detail">Also, throw that Gollum too</div>
+      </li>
+      <li class="tl-item" ng-repeat="item in retailer_history">
+        <div class="timestamp">
+          1st June 2015<br> 7:00 PM
+        </div>
+        <div class="item-title">Waiting For Delivery</div>
+        <div class="item-detail">Also, throw that Gollum too</div>
+      </li>
+      <li class="tl-item" ng-repeat="item in retailer_history">
+        <div class="timestamp">
+          1st June 2015<br> 7:00 PM
+        </div>
+        <div class="item-title">IN Collected Hub</div>
+        <div class="item-detail">Also, throw that Gollum too</div>
+      </li>
+      <li class="tl-item" ng-repeat="item in retailer_history">
+        <div class="timestamp">
+          1st June 2015<br> 7:00 PM
+        </div>
+        <div class="item-title">PickUP Cancel</div>
+        <div class="item-detail">Also, throw that Gollum too</div>
+      </li>
+      <li class="tl-item" ng-repeat="item in retailer_history">
+        <div class="timestamp">
+          1st June 2015<br> 7:00 PM
+        </div>
+        <div class="item-title">Order Collect</div>
+        <div class="item-detail">Also, throw that Gollum too</div>
+      </li>
+      <li class="tl-item" ng-repeat="item in retailer_history">
+        <div class="timestamp">
+          1st June 2015<br> 7:00 PM
+        </div>
+        <div class="item-title">PickUP Asign</div>
+        <div class="item-detail">Also, throw that Gollum too</div>
+      </li>
+      <li class="tl-item" ng-repeat="item in retailer_history">
+        <div class="timestamp">
+          1st June 2015<br> 7:00 PM
+        </div>
+        <div class="item-title">PickUP Request</div>
+        <div class="item-detail"></div>
+      </li>
+     
   
     </ul>
   
